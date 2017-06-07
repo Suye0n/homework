@@ -1,0 +1,23 @@
+클릭할 수 있는 버튼 만들기
+from tkinter import * 
+tk = Tk()
+btn = Button(tk, text="click me")
+btn.pack()
+def hello():
+	print('hello world')
+
+지정된 매개변수 사용하기
+def person(width, height):
+	print('I am %s feet wide, %s feet high' % (width, height))
+
+person(4,3)
+
+person(height=3, width=4)
+
+그림을 그리기 위한 캔버스 생성
+from tkinter import *
+tk = Tk()
+canvas = Canvas(tk, width=500, height=500)
+canvas.pack()
+
+canvas.creat_line(0,0,500,500)
